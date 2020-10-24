@@ -3,40 +3,40 @@
 {% block content %}
 {% if message %}
 <form method="POST" action="#">
-<div class="container">
-	<h5>All fields are required</h1>
-  <div class="form-row">
-	<div class="col-md-4 mb-3">
-		<label for="validationCustom01">First name</label>
-      <input type="text" class="form-control" id="validationCustom01" name="first_name" required>
-    </div>
-    <div class="col-md-4 mb-6">
-      <label id="lab" for="validationCustom02">Last_name</label>
-      <input type="text" class="form-control" id="validationCustom02" name="last_name" required>
+	<div class="container">
+		<h5>All fields are required</h1>
+	  <div class="form-row">
+		<div class="col-md-4 mb-3">
+			<label for="validationCustom01">First name</label>
+	      <input type="text" class="form-control" id="validationCustom01" name="first_name" required>
+	    </div>
+	    <div class="col-md-4 mb-6">
+	      <label id="lab" for="validationCustom02">Last_name</label>
+	      <input type="text" class="form-control" id="validationCustom02" name="last_name" required>
+		</div> 
 	</div> 
-</div> 
-	<p><textarea name="report" placeholder="Write your report here" cols="100" rows="15"></textarea></p>
-	<div class="input-group-append">
-		<button class="btn btn-warning" type="submit">Send to staff</button>
+		<p><textarea name="report" placeholder="Write your report here" cols="100" rows="15"></textarea></p>
+		<div class="input-group-append">
+			<button class="btn btn-warning" type="submit">Send to staff</button>
+		</div>
 	</div>
-</div>
-</form>
-{% else %}
-<form method="POST" action="#">
-<div class="container">
-  <div class="form-row">
-	<div class="col-md-4 mb-3">
-		<label for="validationCustom01">First name</label>
-      <input type="text" class="form-control" id="validationCustom01" name="first_name" required>
-    </div>
-    <div class="col-md-4 mb-6">
-      <label id="lab" for="validationCustom02">Last_name</label>
-      <input type="text" class="form-control" id="validationCustom02" name="last_name" required>
+	</form>
+	{% else %}
+	<form method="POST" action="#">
+	<div class="container">
+	  <div class="form-row">
+		<div class="col-md-4 mb-3">
+			<label for="validationCustom01">First name</label>
+	      <input type="text" class="form-control" id="validationCustom01" name="first_name" required>
+	    </div>
+	    <div class="col-md-4 mb-6">
+	      <label id="lab" for="validationCustom02">Last_name</label>
+	      <input type="text" class="form-control" id="validationCustom02" name="last_name" required>
+		</div> 
 	</div> 
-</div> 
-	<p><textarea name="report" placeholder="Write your report here" cols="100" rows="15"></textarea></p>
-	<div class="input-group-append">
-		<button class="btn btn-warning" type="submit">Send to staff</button>
-	</div>
+		<p><textarea name="report" placeholder="Write your report here" cols="100" rows="15"></textarea></p>
+		<div class="input-group-append">
+			<button class="btn btn-warning" type="submit">Send to staff</button>
+		</div>
 {% endif %}
 {% endblock%}
