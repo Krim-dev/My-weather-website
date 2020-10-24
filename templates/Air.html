@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Weather app{% endblock %}
+
+{% block content %}
+{% if not pressure %}
+	<form action="#" method="POST" class="C_Form">
+				<div class="input-group mb-3 col-4">
+				  <input type="text" class="form-control" placeholder="Enter your city" name="city">
+					<div class="input-group-append">
+					<button class="btn btn-warning" type="submit">Search</button>
+				</div>
+			</div>
+	</form>
+{% else %}
+	<form action="#" method="POST" class="C_Form">
+				<div class="input-group mb-3 col-4">
+				  <input type="text" class="form-control" placeholder="Enter your city" name="city">
+					<div class="input-group-append">
+					<button class="btn btn-warning" type="submit">Search</button>
+				</div>
+			</div>
+	</form>
+	<div class="container">
+		<h1>You have searched for : {{country}},{{city_name}} </h1>
+		<h1>The pressure is {{pressure}} Pa</h1>
+		<h1>The humidity is {{humidity}} g/m<sup>-3</sup></h1>
+		<h1>The wind speed is {{wind_speed}} km/h</h1>
+	</div>
+{% endif %}
+{% endblock %}
