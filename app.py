@@ -28,7 +28,7 @@ def report():
 			server.starttls()
 			server.login("devtest2005@gmail.com", "dev_akram@2005")
 			message = 'Subject: {}\n\n{}'.format(subject, msg)
-			server.sendmail("devtest2005@gmail.com", "devtest2005@gmail.com", message)
+			server.sendmail("devtest2005@gmail.com", "krimdev1977@gmail.com", message)
 			server.quit()
 			message = "Your report has been taken in concideration "
 			return render_template("Home.html", message=message)
@@ -92,3 +92,4 @@ def air():
 			return render_template("fail.html")
 	else : 
 		return render_template("Air.html")
+
